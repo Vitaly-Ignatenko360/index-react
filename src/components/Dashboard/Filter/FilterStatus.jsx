@@ -7,11 +7,11 @@ class FilterStatus extends React.Component {
   render() {
     return (
       <div className="FilterStatus">
+        {/* <a href="#"></a> */}
+        {/* <a href="#"></a>
         <a href="#"></a>
         <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#"></a> */}
       </div>
     )
   }
