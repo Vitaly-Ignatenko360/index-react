@@ -1,0 +1,64 @@
+@import 'utils/reset'
+@import 'utils/vars'
+
+html
+  line-height: $mainLineHeight
+  font-size: $mainFontSize
+  color: $mainFontColor
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+  font-family: $mainFont
+  font-size: 1.6rem
+  font-weight: $mainFontWeight
+  background: $default-color-bg
+
+section,
+.section
+  position: relative
+  padding: 40px 0
+
+.container
+  width: 100%
+  flex: 0 0 auto
+  position: relative
+  margin: 0 auto
+  max-width: $desktopWidth
+  padding: 0 20px
+
+// Modules:
+@import './App.sass'
+@import 'components/app/sidebar/Sidebar'
+@import 'components/app/navbar/Navbar'
+
+@import 'components/Dashboard/Filter/Filter'
+@import 'components/Dashboard/Users/Users'
+
+/* -------------------------------------------------------------------------- */
+/*                           TEST BLOCK RESET SCROLL                          */
+/* -------------------------------------------------------------------------- */
+.qwe
+  background: #08d13a
+  font-family: $mainFont
+  text-align: center
+.ewq
+  background: red
+  text-align: center
+// body
+//   &::-webkit-scrollbar
+//     width: 10px //12
+//     height: 10px //12
+//   &::-webkit-scrollbar-track-piece
+//     background:rgba(0,0,0,0)
+//   &::-webkit-scrollbar-thumb:vertical
+//     height: 10px
+//     background: #272c35
+//   &::-webkit-scrollbar-thumb:vertical:hover
+//     background: #71CA55
+//   &::-webkit-scrollbar-thumb:horizontal
+//     width: 10px
+//     background: #272c35
+//   &::-webkit-scrollbar-thumb:horizontal:hover
+//     background: #71CA55
